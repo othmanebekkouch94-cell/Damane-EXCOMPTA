@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Backend API (Express)",
+      "runtimeExecutable": "C:\\Users\\UOBE454\\AppData\\Local\\nodejs\\node-v20.18.3-win-x64\\node.exe",
+      "runtimeArgs": ["C:\\Users\\UOBE454\\Desktop\\damane-expert-comptable\\backend\\server.js"],
+      "port": 3001
+    },
+    {
+      "name": "Frontend React",
+      "runtimeExecutable": "C:\\Users\\UOBE454\\AppData\\Local\\nodejs\\node-v20.18.3-win-x64\\node.exe",
+      "runtimeArgs": ["C:\\Users\\UOBE454\\Desktop\\damane-expert-comptable\\frontend\\node_modules\\react-scripts\\bin\\react-scripts.js", "start"],
+      "port": 3000
+    },
+    {
+      "name": "Electron Desktop",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["electron", "electron/main.js"],
+      "port": 0
+    }
+  ]
+}

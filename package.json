@@ -1,0 +1,42 @@
+{
+  "name": "damane-expert-comptable",
+  "version": "1.0.0",
+  "description": "Application Expert-Comptable pour DAMANE EUROPE",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js",
+    "seed": "node backend/migrations/seed.js",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:dev": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "electron:dev": "cd electron && npm start",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [
+    "comptabilité",
+    "expert-comptable",
+    "damane",
+    "europe"
+  ],
+  "author": "DAMANE EUROPE",
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.20.0",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1",
+    "tesseract.js": "^7.0.0",
+    "uuid": "^13.0.0",
+    "xlsx": "^0.18.5"
+  }
+}
