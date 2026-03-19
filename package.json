@@ -23,6 +23,7 @@
   "author": "DAMANE EUROPE",
   "license": "PROPRIETARY",
   "dependencies": {
+    "adm-zip": "^0.5.16",
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",

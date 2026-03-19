@@ -361,9 +361,9 @@ function findFileRecursive(dir, targetName, maxDepth = 5) {
   return null;
 }
 
-// GET /api/invoices/file/:jobId/* - Servir un fichier extrait pour visualisation
+// GET /api/invoices/file/:jobId/:rest - Servir un fichier extrait pour visualisation
 // NOTE: Auth via query param ?token= car les iframes ne peuvent pas envoyer de headers
-router.get('/file/:jobId/*', (req, res, next) => {
+router.get('/file/:jobId/:rest', (req, res, next) => {
   // Accepter le token en query param OU en header
   if (req.query.token && !req.headers.authorization) {
     req.headers.authorization = `Bearer ${req.query.token}`;
